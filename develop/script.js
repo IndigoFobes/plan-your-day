@@ -5,6 +5,7 @@ var clickMe = document.querySelectorAll("click-me");
 var hiThere = document.getElementById("hello");
 
 
+
 // Display current date at the top of the page
 var today = moment().format("dddd, MMMM Do");
 currentDay.textContent = today;
@@ -15,6 +16,18 @@ if (hiThere){
 hiThere.addEventListener("click", function() {
     console.log("hello");
 });
+};
+
+document.addEventListener('DOMContentLoaded',domloaded,false);
+function domloaded(){
+
+  var helloAgain = document.getElementsByClassName("hey");
+
+  for (var i=0; i<helloAgain.length; i++) {
+    helloAgain[i].addEventListener("click", function() {
+      console.log("hi again!");
+    });
+};
 };
 //$(".click-me").click(function() {
  //   console.log("hello");
