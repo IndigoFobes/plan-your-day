@@ -1,23 +1,16 @@
 // variables
 var currentDay = document.getElementById("currentDay");
 var taskBox = document.querySelectorAll("task");
-var clickMe = document.querySelectorAll("click-me");
-var hiThere = document.getElementById("hello");
-
+// var clickMe = document.querySelectorAll("click-me");
+var calendar = 'file:///Users/indigofobes/Desktop/GT_Coding/plan-your-day/develop/index.html';
+var form = 'form.html';
 
 
 // Display current date at the top of the page
 var today = moment().format("dddd, MMMM Do");
 currentDay.textContent = today;
 
-console.log(taskBox);
-// Click event listener
-if (hiThere){
-hiThere.addEventListener("click", function() {
-    console.log("hello");
-});
-};
-
+// On click... 
 document.addEventListener('DOMContentLoaded',domloaded,false);
 function domloaded(){
 
@@ -25,13 +18,10 @@ function domloaded(){
 
   for (var i=0; i<addTask.length; i++) {
     addTask[i].addEventListener("click", function() {
-      console.log("hi again!");
+      window.location.replace(form);
     });
 };
 };
-//$(".click-me").click(function() {
- //   console.log("hello");
-//});
 
 // Create a function that allows user input into the form
 
