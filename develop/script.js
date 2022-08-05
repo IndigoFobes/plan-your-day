@@ -1,16 +1,18 @@
 // variables
 var currentDay = document.getElementById("currentDay");
-var eventBox = document.querySelectorAll("event");
+var taskBox = document.querySelectorAll("task");
 var clickMe = document.querySelectorAll("click-me");
+var hiThere = document.getElementById("hello");
 
 
 // Display current date at the top of the page
 var today = moment().format("dddd, MMMM Do");
 currentDay.textContent = today;
 
+console.log(taskBox);
 // Click event listener
-if (clickMe){
-clickMe.addEventListener("click", function() {
+if (hiThere){
+hiThere.addEventListener("click", function() {
     console.log("hello");
 });
 };
