@@ -21,10 +21,10 @@ hiThere.addEventListener("click", function() {
 document.addEventListener('DOMContentLoaded',domloaded,false);
 function domloaded(){
 
-  var helloAgain = document.getElementsByClassName("hey");
+  var addTask = document.getElementsByClassName("addTask");
 
-  for (var i=0; i<helloAgain.length; i++) {
-    helloAgain[i].addEventListener("click", function() {
+  for (var i=0; i<addTask.length; i++) {
+    addTask[i].addEventListener("click", function() {
       console.log("hi again!");
     });
 };
