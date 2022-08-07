@@ -1,17 +1,18 @@
 // variables
 var currentDay = document.getElementById("currentDay");
-var taskBox = document.querySelectorAll("task");
+// var tableRows = document.getElementsByTagName("td");
+var taskBox = document.getElementsByClassName("task");
 // var clickMe = document.querySelectorAll("click-me");
 var calendar = 'file:///Users/indigofobes/Desktop/GT_Coding/plan-your-day/develop/index.html';
 var form = 'form.html';
 var now = moment().format("HH.mm");
 var time = document.getElementsByClassName("time");
+// var displayInput = document.getElementsByClassName("userEvent");
 
 
 // Display current date at the top of the page
 var today = moment().format("dddd, MMMM Do");
 currentDay.textContent = today;
-
 
 
 // Change the color if event is past or present
@@ -22,28 +23,30 @@ for (var i = 0; i < time.length; i++) {
   if (time[i].id >= now) {
     time[i].setAttribute("style", "background-color: rgb(118, 159, 118)");
   }
-  // If the 
+  // If the time on the planner is the hour we are in, make it red (current event).
   var roundedDown = Math.floor(now);
   if (time[i].id == roundedDown) {
     time[i].setAttribute("style", "background-color: #ff6961");
   }
-  
 }
 
-
-
-// On click... 
-/* document.addEventListener('DOMContentLoaded',domloaded,false);
+// On click... add input field to empty div
+document.addEventListener('DOMContentLoaded',domloaded,false);
 function domloaded(){
 
-  var addTask = document.getElementsByClassName("addTask");
+  // loop to access each empty div
+ /* for (var w = 0; w < displayInput.length; w++) {
+    console.log(displayInput[w]);
+  } */
 
-  for (var i=0; i<addTask.length; i++) {
-    addTask[i].addEventListener("click", function() {
-      window.location.replace(form);
+  for (var i = 0; i < taskBox.length; i++) {
+    taskBox[i].addEventListener("click", function() {
+      console.log(taskBox[i]);
+      var newDiv = document.createElement("div");
+      taskBox[i].appendChild(newDiv);
     });
 };
-}; */
+}; 
 
 
 
