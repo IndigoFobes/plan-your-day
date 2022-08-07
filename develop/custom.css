@@ -110,7 +110,9 @@ body {
     }
   }
 
-
+  .red {
+    background-color: #ff6961;
+  }
 
   /* thead {
     justify-content: space-evenly;

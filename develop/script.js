@@ -17,6 +17,9 @@ var time = document.getElementsByClassName("time");
 
 for (var i = 0; i < time.length; i++) {
   console.log(time[i].id);
+  if (time[i].id >= now) {
+    time[i].setAttribute("style", "background-color: #ff6961");
+  }
   //var timeBlock = time[i].innerHTML;
   // console.log(timeBlock);
   // If time block is greater than now, make the block GREEN
@@ -36,6 +39,8 @@ function domloaded(){
     });
 };
 }; */
+
+
 
 // Create a function that allows user input into the form
 
