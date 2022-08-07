@@ -10,8 +10,17 @@ var form = 'form.html';
 var today = moment().format("dddd, MMMM Do");
 currentDay.textContent = today;
 
+// Change the color if event is past or present
+var now = moment().format("h:mma");
+console.log(now);
+
+var time = document.getElementsByClassName("time");
+for (var i = 0; i < time.length; i++) {
+  console.log(time[i].innerHTML);
+}
+
 // On click... 
-document.addEventListener('DOMContentLoaded',domloaded,false);
+/* document.addEventListener('DOMContentLoaded',domloaded,false);
 function domloaded(){
 
   var addTask = document.getElementsByClassName("addTask");
@@ -21,7 +30,7 @@ function domloaded(){
       window.location.replace(form);
     });
 };
-};
+}; */
 
 // Create a function that allows user input into the form
 
