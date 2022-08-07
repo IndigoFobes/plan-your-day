@@ -11,13 +11,18 @@ var today = moment().format("dddd, MMMM Do");
 currentDay.textContent = today;
 
 // Change the color if event is past or present
-var now = moment().format("h:mma");
+var now = moment().format("HHmm");
 console.log(now);
-
 var time = document.getElementsByClassName("time");
+
 for (var i = 0; i < time.length; i++) {
-  console.log(time[i].innerHTML);
+  console.log(time[i].id);
+  //var timeBlock = time[i].innerHTML;
+  // console.log(timeBlock);
+  // If time block is greater than now, make the block GREEN
 }
+
+
 
 // On click... 
 /* document.addEventListener('DOMContentLoaded',domloaded,false);
