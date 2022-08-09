@@ -89,6 +89,7 @@ body {
     border-left-color:#000000 !important; /* Why is this not working? */
     border-right-color: #000000 !important;
     width: 80%;
+    background-color: #d3d3d3;
   }
 
   .time {
@@ -107,7 +108,6 @@ body {
   @media screen and (max-width: 768px) {
     .task {
       width: 70%;
-      background-color:rgb(51, 51, 101);
     }
   }
 
