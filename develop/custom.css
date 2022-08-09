@@ -83,11 +83,11 @@ body {
   }
 
   .task {
-   /* border-radius: 1px;
+   /* border-radius: 1px;*/
     border-width: 5px;
-    border-color: black; */
-    background-color: rgb(242, 242, 242);
-    opacity: 50%;
+    border-color: black; 
+    border-left-color:#000000 !important; /* Why is this not working? */
+    border-right-color: #000000 !important;
     width: 80%;
   }
 
@@ -113,3 +113,17 @@ body {
   .userEvent {
     display: none;
   }
+
+  input.transparent-input { 
+    border:none !important
+}
+
+.transparent-input {
+   background-color: rgba(0, 0, 0, 0);
+   border:none;
+}
+
+ input.transparent-input{
+       background-color:rgba(0,0,0,0) !important;
+       border:none !important;
+    }
