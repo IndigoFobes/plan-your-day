@@ -1,13 +1,9 @@
 // variables
 var currentDay = document.getElementById("currentDay");
-// var tableRows = document.getElementsByTagName("td");
-// var clickMe = document.querySelectorAll("click-me");
 var calendar = 'file:///Users/indigofobes/Desktop/GT_Coding/plan-your-day/develop/index.html';
 var form = 'form.html';
 var now = moment().format("HH.mm");
 var time = document.getElementsByClassName("time");
-
-// var displayInput = document.getElementsByClassName("userEvent");
 
 
 // Display current date at the top of the page
@@ -34,7 +30,7 @@ for (var i = 0; i < time.length; i++) {
 
   // Make a variable for the save button
   var saveBtn = document.getElementsByClassName("bi-save");
-  console.log(saveBtn[i]);
+  
 }
 
 // function to handle input entries
