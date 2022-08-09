@@ -107,6 +107,7 @@ body {
   @media screen and (max-width: 768px) {
     .task {
       width: 70%;
+      background-color:rgb(51, 51, 101);
     }
   }
 

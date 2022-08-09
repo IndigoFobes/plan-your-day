@@ -17,17 +17,21 @@ currentDay.textContent = today;
 // Change the color if event is past or present
 // Loop to access all elements with 'time' class.
 for (var i = 0; i < time.length; i++) {
+  // Get the task of the corresponding row in the same loop.
+  var thisTask = document.getElementsByClassName("task");
+  console.log(thisTask[i]);
   console.log(time[i].id);
   // If the time on the planner is greater than the current time, make it green (future event).
   if (time[i].id >= now) {
-    time[i].setAttribute("style", "background-color: rgb(118, 159, 118)");
-  }
+    thisTask[i].setAttribute("style", "background-color: rgb(118, 159, 118)");
+  };
   // If the time on the planner is the hour we are in, make it red (current event).
   var roundedDown = Math.floor(now);
   if (time[i].id == roundedDown) {
-    time[i].setAttribute("style", "background-color: #ff6961");
-  }
+    thisTask[i].setAttribute("style", "background-color: #ff6961");
+  };
 }
+
 
 // function to handle input entries
 function handleInput(event) {
