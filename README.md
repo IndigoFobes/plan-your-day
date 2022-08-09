@@ -16,5 +16,6 @@ Work in progress.
 ![Screenshot](screenshot-calendar.png) 
 
 ## Deployed Application
-Click [here]() for live URL.
+Click [here](https://indigofobes.github.io/plan-your-day/develop/) for live URL.
+
 Click [here](https://github.com/IndigoFobes/plan-your-day.git) for my GitHub repository.
