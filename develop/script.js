@@ -6,6 +6,7 @@ var calendar = 'file:///Users/indigofobes/Desktop/GT_Coding/plan-your-day/develo
 var form = 'form.html';
 var now = moment().format("HH.mm");
 var time = document.getElementsByClassName("time");
+
 // var displayInput = document.getElementsByClassName("userEvent");
 
 
@@ -30,17 +31,17 @@ for (var i = 0; i < time.length; i++) {
   if (time[i].id == roundedDown) {
     thisTask[i].setAttribute("style", "background-color: #ff6961");
   };
-}
 
+  // Make a variable for the save button
+  var saveBtn = document.getElementsByClassName("bi-save");
+  console.log(saveBtn[i]);
+}
 
 // function to handle input entries
 function handleInput(event) {
 
-  // Grab user's task
- // $('input').each(function (index) {
-    var userTask = $('input[name="todo"]').val();
-    console.log("clicked");
-  
+  // Grab user's event with for loop
+
 }
 
 // Want it so that when user clicks save, we keep the task on the page, saved in local storage.
